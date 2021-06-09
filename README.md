@@ -12,8 +12,9 @@ Simple Vue Pagination Component
 
 ### Dependencies
 
-* Laravel 8.0+
+* require php ^7.4|^8.0
 * Vue.js
+* Laravel 8
 
 ### Installing
 
