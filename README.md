@@ -3,6 +3,8 @@
 Laravel 8 + Vue.js - Simple Product Listing with CRUD & Pagination
 Phat X Luong - 2021
 
+![Alt text](https://i.ibb.co/X3Hm1SS/demo.png "Demo Screenshot")
+
 ## Description
 
 One CRUD operation to manage Product Listing - add/edit/update/delete.
