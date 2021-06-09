@@ -12,7 +12,7 @@ Simple Vue Pagination Component
 
 ### Dependencies
 
-* require php ^7.4|^8.0
+* mbezhanov/faker-provider-collection[2.0.0, ..., 2.0.1] require php ^7.4|^8.0 
 * Vue.js
 * Laravel 8
 
