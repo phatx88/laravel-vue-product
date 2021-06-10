@@ -16,6 +16,7 @@ Simple Vue Pagination Component
 
 * Vue.js
 * Laravel 8
+* PHP 7.4/8.0
 
 ### Installing
 
@@ -24,7 +25,7 @@ Simple Vue Pagination Component
 * Run composer update
 * Run php artisan key:generate
 * Create database in myPHPadmin (ex: laravel-vue-product) 
-* import file laravel-vue-product.sql in local repo folder
+* Import .sql file "laravel-vue-product.sql" in local repository
 * Run npm install
 * Run npm run watch
 * Run php artisan serve
