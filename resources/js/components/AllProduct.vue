@@ -1,6 +1,7 @@
 <template>
     <div>
         <h3 class="text-center">All Products</h3><br/>
+        <button class="btn btn-success float-right m-2" @click="fetchRandom()">Randomize</button>
         <table class="table table-bordered">
             <thead>
             <tr>
@@ -78,6 +79,13 @@
             },
             getImage(){
                 return  'img/product-image-placeholder.jpg';
+            },
+            fetchRandom() {
+            this.axios
+                .get('http://127.0.0.1:8000/api/products?random='+true)
+                .then(response => {
+                    this.products = response.data.data;
+                });
             },
             getProducts (page) {
                 axios.get('http://127.0.0.1:8000/api/products?page='+page)

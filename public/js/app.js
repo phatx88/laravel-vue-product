@@ -1957,6 +1957,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
@@ -2006,12 +2007,19 @@ __webpack_require__.r(__webpack_exports__);
     getImage: function getImage() {
       return 'img/product-image-placeholder.jpg';
     },
-    getProducts: function getProducts(page) {
+    fetchRandom: function fetchRandom() {
       var _this2 = this;
 
-      axios.get('http://127.0.0.1:8000/api/products?page=' + page).then(function (response) {
+      this.axios.get('http://127.0.0.1:8000/api/products?random=' + true).then(function (response) {
         _this2.products = response.data.data;
-        _this2.pagination = response.data;
+      });
+    },
+    getProducts: function getProducts(page) {
+      var _this3 = this;
+
+      axios.get('http://127.0.0.1:8000/api/products?page=' + page).then(function (response) {
+        _this3.products = response.data.data;
+        _this3.pagination = response.data;
       });
     }
   }
@@ -38441,6 +38449,19 @@ var render = function() {
     [
       _c("h3", { staticClass: "text-center" }, [_vm._v("All Products")]),
       _c("br"),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-success float-right m-2",
+          on: {
+            click: function($event) {
+              return _vm.fetchRandom()
+            }
+          }
+        },
+        [_vm._v("Randomize")]
+      ),
       _vm._v(" "),
       _c("table", { staticClass: "table table-bordered" }, [
         _vm._m(0),

@@ -8,10 +8,13 @@ use Illuminate\Support\Facades\Validator;
 
 class ProductController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        // $products = Product::all()->toArray();
-        // return array_reverse($products);
+        $random = $request->random;
+        if($random){
+            $products = Product::inRandomOrder()->paginate(5);
+            return response()->json($products);
+        }
         $products = Product::orderBy('id', 'desc')->paginate(5);
         return response()->json($products);
     }
