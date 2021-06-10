@@ -1,7 +1,9 @@
 # Project Title
 
 Laravel 8 + Vue.js - Simple Product Listing with CRUD & Pagination
-Phat X Luong - 2021
+- Phat X Luong - 2021
+
+![Alt text](https://i.ibb.co/X3Hm1SS/demo.png "Demo Screenshot")
 
 ## Description
 
@@ -12,8 +14,9 @@ Simple Vue Pagination Component
 
 ### Dependencies
 
-* Laravel 8.0+
+* mbezhanov/faker-provider-collection[2.0.0, ..., 2.0.1] require php ^7.4|^8.0 
 * Vue.js
+* Laravel 8
 
 ### Installing
 
@@ -36,7 +39,7 @@ http://127.0.0.1:8000
 
 ## Authors
 
-* Phat.x.Luong 
+* Phat.X.Luong 
 * [@PhatLuong](https://www.phatx88-porfolio.xyz/)
 
 ## Acknowledgments
