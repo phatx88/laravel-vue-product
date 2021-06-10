@@ -21,7 +21,7 @@ Simple Vue Pagination Component
 
 * Clone the repository with git clone
 * Copy .env.example file to .env and edit database credentials there
-* Run composer install
+* Run composer update
 * Run php artisan key:generate
 * Create database in myPHPadmin (ex: laravel-vue-product) 
 * import file laravel-vue-product.sql in local repo folder
