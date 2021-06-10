@@ -4,7 +4,7 @@ namespace Database\Factories;
 
 use App\Models\Product;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Faker\Generator as Faker;
+// use Faker\Generator as Faker;
 
 class ProductFactory extends Factory
 {
@@ -23,10 +23,10 @@ class ProductFactory extends Factory
     public function definition()
     {
         return [
-            'title' => $this->faker->productName,
-            'description' => $this->faker->safeColorName,
-            'quantity' => $this->faker->numberBetween(1, 99),
-            'price' => $this->faker->numberBetween(1, 99),
+            // 'title' => $this->faker->productName,
+            // 'description' => $this->faker->safeColorName,
+            // 'quantity' => $this->faker->numberBetween(1, 99),
+            // 'price' => $this->faker->numberBetween(1, 99),
         ];
     }
 }
