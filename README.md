@@ -14,7 +14,6 @@ Simple Vue Pagination Component
 
 ### Dependencies
 
-* mbezhanov/faker-provider-collection[2.0.0, ..., 2.0.1] require php ^7.4|^8.0 
 * Vue.js
 * Laravel 8
 
@@ -24,8 +23,8 @@ Simple Vue Pagination Component
 * Copy .env.example file to .env and edit database credentials there
 * Run composer install
 * Run php artisan key:generate
-* Run php artisan migrate (or import laravel-vue-product.sql)
-* Run php artisan db:seed 
+* Create database in myPHPadmin (ex: laravel-vue-product) 
+* import file laravel-vue-product.sql in local repo folder
 * Run npm install
 * Run npm run watch
 * Run php artisan serve
